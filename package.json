@@ -1,0 +1,24 @@
+{
+  "name": "ztools",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "./node_modules/nodemon -e ts --watch ./  --ignore './**/*.spec.ts' --exec ts-node index",
+    "build": "tsc",
+    "test": "./node_modules/.bin/jasmine-ts JASMINE_CONFIG_PATH=jasmine.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasmine": "^2.8.2",
+    "@types/node": "^8.0.53",
+    "jasmine-ts": "^0.2.1",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  }
+}

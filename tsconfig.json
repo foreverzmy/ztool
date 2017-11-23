@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "types": [
+      "node",
+      "jasmine"
+    ],
+    "baseUrl": "",
+    "declaration": true,
+    "watch": true,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es2017", "es2015", "es2015.promise"],
+    "mapRoot": "./",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": false,
+    "target": "es6",
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  }
+}
