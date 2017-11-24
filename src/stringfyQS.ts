@@ -1,3 +1,8 @@
+/**
+ * @desc 对象转 QueryString
+ * @param {{ [key: string]: any }} - 需要转换的对象
+ * @returns {string} - QueryString
+ */
 const stringfyQS = (obj: { [key: string]: any }) => {
   if (typeof obj !== 'object') {
     return '';
