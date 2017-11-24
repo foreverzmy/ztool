@@ -3,7 +3,7 @@ const parseQS = (url: string) => {
   if (!qs) {
     return {};
   }
-  return JSON.parse(`{${decodeURIComponent(qs).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"')}}`);
+  return JSON.parse(`{"${decodeURIComponent(qs).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"')}"}`);
 };
 
 export default parseQS;
