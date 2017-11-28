@@ -2,9 +2,8 @@
  * @desc 函数节流
  * @param {Function} fun - 需要节流的函数
  * @param {number} dealy - 节流时间
- * @param {boolean} [trailing=false]
  */
-const throttle = (fun: Function, dealy: number) => {
+const throttle = (fun: Function, delay: number) => {
   let timeoutId: NodeJS.Timer;
 
   function wrapper(...args: any[]) {
@@ -14,7 +13,7 @@ const throttle = (fun: Function, dealy: number) => {
 
     timeoutId = setTimeout(() => {
       fun.apply(this, args);
-    }, dealy);
+    }, delay);
 
   }
   return wrapper;

@@ -1,6 +1,6 @@
-import throttle from './throttle';
+import debounce from './debounce';
 
-describe('throttle', () => {
+describe('debounce', () => {
   let timerCallback: jasmine.Spy;
 
   beforeEach(() => {
@@ -13,9 +13,9 @@ describe('throttle', () => {
   });
 
   it('common', () => {
-    let a: number;
-    const fun = throttle((arg: any) => {
-      a = arg;
+    let a = 0;
+    const fun = debounce((arg: any) => {
+      a += arg;
       timerCallback();
     }, 1000);
     for (let i = 0; i < 10; i++) {
@@ -28,9 +28,9 @@ describe('throttle', () => {
   });
 
   it('interval', () => {
-    let a: number;
-    const fun = throttle((arg: any) => {
-      a = arg;
+    let a = 0;
+    const fun = debounce((arg: any) => {
+      a += arg;
       jasmine.clock().tick(501);
     }, 1000);
     let i = 0;
