@@ -10,7 +10,7 @@
     "test": "./node_modules/.bin/jasmine-ts JASMINE_CONFIG_PATH=jasmine.json"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@types/jasmine": "^2.8.2",
@@ -19,6 +19,6 @@
     "nodemon": "^1.12.1",
     "ts-node": "^3.3.0",
     "tslint": "^5.8.0",
-    "typescript": "^2.6.1"
+    "typescript": "^2.6.2"
   }
 }
