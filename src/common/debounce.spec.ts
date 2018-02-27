@@ -1,6 +1,6 @@
 import debounce from './debounce';
 
-describe('debounce', () => {
+describe('debounce:', () => {
   let timerCallback: jasmine.Spy;
 
   beforeEach(() => {
@@ -50,5 +50,4 @@ describe('debounce', () => {
     expect(timerCallback.calls.count()).toEqual(10);
     expect(a).toBe(9);
   });
-
 });
